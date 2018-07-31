@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.stech.printercloudapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:name=".appconfig.AppConfig"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Non-QMMP Monitor"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="DATABASE"
+            android:value="Qnotifer.db" />
+        <meta-data
+            android:name="VERSION"
+            android:value="3" />
+        <meta-data
+            android:name="QUERY_LOG"
+            android:value="true" />
+        <meta-data
+            android:name="package com.example.stech.printercloudapp.branchmodel;"
+            android:value="com.grafixartist.PrinterCloudApp" />
+
+        <meta-data
+            android:name="package com.example.stech.printercloudapp.stat_categorymodel;"
+            android:value="com.grafixartist.PrinterCloudApp" />
+
+        <meta-data
+            android:name="package com.example.stech.printercloudapp.stat_branch_categorymodel;"
+            android:value="com.grafixartist.PrinterCloudApp" />
+
+        <meta-data
+            android:name="package com.example.stech.printercloudapp.fact_dash_snapshotmodel;"
+            android:value="com.grafixartist.PrinterCloudApp" />
+
+        <activity android:name=".SecondActivity"></activity>
+    </application>
+
+</manifest>
